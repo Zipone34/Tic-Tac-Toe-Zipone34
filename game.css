@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color:white;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+.container {
+    text-align: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
+.player-info {
+    margin-bottom: 20px;
+    color:white;
+    
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    color: black;
+    font-family: bold ;
+    background: greenyellow;
+    margin-top: 20px;
+    display: none;
+    
+    /* Hidden initially */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+    background:blue;
+    color:white;
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.Name{
+  color:white;
+}
+#player1{
+  margin:10px;
+  padding:12px;
+  border:none;
+  outline: none;
+  border-radius: 20px;
+  color:white;
+  background-color: rgba(0, 0, 0, 5);
+}
+#player2{
+  margin:10px;
+  padding:12px;
+  border:none;
+  outline:none;
+  border-radius: 20px;
+  color:white;
+  background-color: rgba(0, 0, 0, 5);
+}
+label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.progress-container {
+    width: 80%;
+    background-color: #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 30px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    transition: width 0.1s ease;
+}
+
+.Name{
+  margin-bottom: 5%; 
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+}
